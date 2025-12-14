@@ -6,7 +6,7 @@ We currently offer two types of API key. The type of key you require depends on 
 
 If you are distributing software or apps that use our API, each user will need to generate their own API key. We suggest that you allow your users to enter their API key in a configuration file.
 
-You can access/generate your personal API key on \[TC\] World under 'My Account': [world.city-driving.co.uk/?page=myaccount](http://world.city-driving.co.uk/?page=myaccount)
+You can access/generate your personal API key on \[TC\] World under 'My Account': [world.city-driving.co.uk/myaccount](http://world.city-driving.co.uk/myaccount)
 
 This key should be used during development and testing of your application. This key also acts as your personal access key for applications that use our API and should therefore not be used in production versions of your application.
 
