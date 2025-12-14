@@ -9,7 +9,6 @@ We currently offer the following statistics APIs:
 | API | Documentation |
 | :--- | :--- |
 | Users Online | [View Docs](statistics-api.md#users-online) |
-| Gumball | [View Docs](statistics-api.md#gumball) |
 | Top Distance | [View Docs](statistics-api.md#top-distance) |
 | Top Money | [View Docs](statistics-api.md#top-money) |
 | Top Wealth | [View Docs](statistics-api.md#top-wealth) |
