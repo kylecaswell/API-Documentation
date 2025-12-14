@@ -31,7 +31,7 @@ TCAPIRequest(request, function(data) {
 });
 
 function TCAPIRequest(req, callback) {
-  this.baseUrl = 'https://api.tc-gaming.co.uk/';
+  this.baseUrl = 'https://world.city-driving.co.uk/api/v2';
   this.xhr = new XMLHttpRequest();
   this.qs = "";
   if(Object.keys(req.params).length > 0) {
@@ -59,7 +59,7 @@ If you would prefer, here is our reference implementation for fetching data with
 
 ```javascript
 $.get(
-  "https://api.tc-gaming.co.uk/citydriving/profile/get",
+  "https://world.city-driving.co.uk/api/v2/citydriving/profile/get",
   {
     key: 'YOUR_KEY',
     username: 'USERNAME'
@@ -103,7 +103,7 @@ function TCAPIRequest($cmd, $queryData = null) {
   $context = stream_context_create($opts);
   if ($queryData) $queryString = "?" . http_build_query($queryData);
   else $queryString = "";
-  $url = 'https://api.tc-gaming.co.uk/' . $cmd . $queryString;
+  $url = 'https://world.city-driving.co.uk/api/v2/' . $cmd . $queryString;
   $result = @file_get_contents($url, false, $context);
   if (!$result) throw new Exception('Query failed.');
   else {
