@@ -4,12 +4,12 @@ For requests using client keys, you can make up to 720 requests per hour. The ra
 
 ## Check my rate limit
 
-The simplest way of checking the status of your rate limit is by logging in to \[TC\] World and viewing your rate limit status under 'My Account': [world.city-driving.co.uk/?page=myaccount](http://world.city-driving.co.uk/?page=myaccount)
+The simplest way of checking the status of your rate limit is by logging in to \[TC\] World and viewing your rate limit status under 'My Account': [world.city-driving.co.uk/myaccount](http://world.city-driving.co.uk/myaccount)
 
 You can also check the returned HTTP headers of API requests to see the status of your rate limit, for instance with `curl`:
 
 ```text
-$ curl -i "http://api.tc-gaming.co.uk/citydriving/stats/online?key=YOUR_KEY"
+$ curl -i "https://world.city-driving.co.uk/api/v2/citydriving/stats/online?key=YOUR_KEY"
 ```
 
 ```text
