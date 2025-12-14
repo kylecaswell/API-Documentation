@@ -20,7 +20,6 @@
   * [Vehicle API](apis/citydriving-statistics-api/vehicle-api.md)
   * [AutoMarket API](apis/citydriving-statistics-api/automarket-api.md)
 * [Public Server Status JSON API](apis/public-json-api.md)
-* [Discord API](apis/discord-api.md)
 
 ## Guides
 
