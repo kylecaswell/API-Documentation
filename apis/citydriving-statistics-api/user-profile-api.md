@@ -9,7 +9,6 @@ We currently offer the following user profile APIs:
 | API | Documentation |
 | :--- | :--- |
 | Get a User Profile | [View Docs](user-profile-api.md#get-a-user-profile) |
-| Get a User's InSim UI Options | [View Docs](user-profile-api.md#get-a-users-insim-ui-options) |
 
 ## Get a User Profile
 
@@ -49,7 +48,7 @@ This request usually returns all cars, licenses, properties and upgrades owned b
 **RESPONSE:**
 
 ```text
-GET https://api.tc-gaming.co.uk/citydriving/profile/get?key=YOUR_KEY&username=chucknorris&stats=1&cars=1&licenses=1&upgrades=1&properties=1
+GET https://world.city-driving.co.uk/api/v2/citydriving/profile/get?key=YOUR_KEY&username=chucknorris&stats=1&cars=1&licenses=1&upgrades=1&properties=1
 HTTP/1.1 200 OK
 ```
 
@@ -58,165 +57,64 @@ HTTP/1.1 200 OK
   "id": 4,
   "username": "chucknorris",
   "isOnline": true,
-  "nickname": "^7\u2039Chuck\u203a",
+  "nickname": "^7‹Chuck›",
   "insimAdmin": true,
   "adminLevel": 1,
   "needsCopTraining": false,
-  "money": 1586937,
-  "dateJoined": 1198268290,
-  "dateLastSeen": 1504975483,
+  "money": 19988,
+  "dateJoined": "2007-12-21T20:18:10+00:00",
+  "dateLastSeen": "2021-03-06T17:33:38+00:00",
   "countryCode": "de",
-  "flag": "\/\/cdn.boardhost.com\/flags\/de.png",
+  "flag": "//cdn.boardhost.com/flags/de.png",
   "stats": {
-    "sent_money": 423932,
-    "received_money": 783590,
-    "earned_refunds": 13960,
-    "paid_for_renting": 41843,
-    "received_fines": 1360,
-    "paid_fines": 134403,
-    "paid_radar_fines": 8326,
-    "driven_distance": 223310815.7382,
-    "driving_money_plus": 1644846,
-    "driving_money_minus": 153715,
-    "paid_donation": 965,
-    "received_donation": 187,
-    "paid_compensation": 270,
-    "received_compensation": 620,
-    "crashes": 1178,
-    "chases_won_robber": 18,
-    "chases_lost_robber": 88,
-    "chases_won_cop": 5,
-    "chases_lost_cop": 15,
-    "outran_cops": 28,
-    "net_value": 1863810,
-    "gaming_time_total": 30899940,
-    "gaming_time_cop": 166878,
-    "gaming_time_civil": 30733062,
-    "gaming_time_tow": 2124,
-    "gaming_time_chasing": 179,
-    "gaming_time_chased": 486,
-    "driven_distance_cop": 3206.2881,
-    "driven_distance_civil": 425272.3399,
-    "driven_distance_tow": 2595.9957,
-    "driven_distance_offroad": 115153.1259,
-    "driven_distance_chasing": 3187.3062,
-    "driven_distance_chased": 14601.36,
-    "driven_distance_sos": 2246.9407,
-    "cop_xp": 48,
-    "robber_xp": 1427,
-    "rp_xp": 6356,
-    "gumball_distance": 0,
-    "gumball_time": 0,
-    "winch_used": 1,
-    "ramps_placed": 1,
-    "sos_called": 4,
-    "sos_responded": 1
+    "1": 452703,
+    "2": 882887,
+    "3": 16240,
+    "4": 47884,
+    "5": 3087,
+    "6": 225626,
+    "7": 8526
   },
-  "licenses": [
+  "licences": [
     {
-      "type": "admin",
-      "name": "Server Administrator",
-      "dateIssued": 1395919556,
-      "issuedBy": 0,
-      "validUntil": 0,
-      "suspendedUntil": 0,
+      "id": "cop",
+      "name": "Cop License",
+      "dateIssued": "2019-08-03T12:14:08+00:00",
+      "validUntil": "2020-08-02T12:14:08+00:00",
+      "suspendedUntil": null,
       "revoked": false,
-      "expired": false,
+      "expired": true,
       "suspended": false
-    },
-    ...
+    }
   ],
   "properties": [
     {
-      "id": 13,
-      "type": "garage",
-      "condition": 1,
-      "value": 0
-    },
-    {
-      "id": 11,
-      "type": "locator",
-      "condition": 1,
-      "value": 10000
-    },
-    ...
+      "id": 126019,
+      "type": "ramp",
+      "name": "Ramp",
+      "condition": 0.4415,
+      "value": 1104
+    }
   ],
   "cars": [
     {
-      "vin": "AAAAB",
-      "type": "XFG",
-      "odometerKm": 7819.045,
-      "condition": 67.1463,
-      "wear": 32.8437,
-      "damage": 0,
+      "vin": "ACSRK",
+      "type": "UF1.XMAS",
+      "odometerKm": 767.235,
+      "condition": 95.49,
+      "wear": 4.149,
+      "damage": 0.3526,
       "upgrades": [
         {
-          "id": 113172,
+          "id": 126019,
           "type": "ramp",
-          "condition": 0.9988,
-          "value": 2497
-        },
-        {
-          "id": 113171,
-          "type": "winch",
-          "condition": 0.999,
-          "value": 4995
-        },
-        {
-          "id": 113110,
-          "type": "radar_warner",
-          "condition": 1,
-          "value": 2500
+          "name": "Ramp",
+          "condition": 0.4415,
+          "value": 1104
         }
       ]
-    },
-    ...      
+    }
   ]
-}
-```
-
-## Get a User's InSim UI Options
-
-Access a CityDriving user's `!setopt` InSim UI options.
-
-**ENDPOINT:** `/citydriving/profile/getopts`
-
-### Mandatory Parameters
-
-| Name | Expected Value |
-| :--- | :--- |
-| `key` | _{string}_ : API Key |
-| `username` | _{string}_ : A Live for Speed username |
-
-### Example
-
-**REQUEST:** `?key=YOUR_KEY&username=mbutcher`
-
-This API only returns the options which have been changed from the default setting using the `!setopt` command. Numbers refer to the LFS colour code of the chat message. This example shows the default values which would not normally be returned.
-
-**RESPONSE:**
-
-```text
-GET https://api.tc-gaming.co.uk/citydriving/profile/getopts?key=YOUR_KEY&username=mbutcher
-HTTP/1.1 200 OK
-```
-
-```javascript
-{
-"chase_debug": "0",
-"force_mouse": "0",
-"hidead": "7817d923f3307c27bc5b02cbcd8c748d",
-"loccol": "7",
-"locsize": "5",
-"money": "session",
-"mph": "0",
-"pri_mrt_civ": "ACUFU",
-"pri_uf1_civ": "ACTUJ",
-"pri_uf1_cop": "ACTUJ",
-"pri_uf1_med": "ACTUJ",
-"pri_uf1_res": "ACTUJ",
-"spawn_location": "cruise",
-"theme": "chucks"
 }
 ```
 
