@@ -12,5 +12,4 @@ We currently offer the following CityDriving APIs:
 | `\profile` | User Profile API | [View Docs](user-profile-api.md) |
 | `\stats` | Statistics API | [View Docs](statistics-api.md) |
 | `\carinfo` | Vehicle API | [View Docs](vehicle-api.md) |
-| `\market` | AutoMarket API | [View Docs](automarket-api.md) |
 
