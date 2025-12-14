@@ -20,7 +20,7 @@ This request indexes players by InSim PLID \(inside the `players` object\) and r
 **RESPONSE:**
 
 ```text
-GET https://api.tc-gaming.co.uk/json/status_one.json
+GET https://world.city-driving.co.uk/api/v2/json/status_one.json
 HTTP/1.1 200 OK
 ```
 
@@ -64,25 +64,36 @@ This request indexes players by InSim PLID \(inside the `players` object\) and r
 **RESPONSE:**
 
 ```text
-GET https://api.tc-gaming.co.uk/json/status_two.json
+GET https://world.city-driving.co.uk/api/v2/json/status_two.json
 HTTP/1.1 200 OK
 ```
 
 ```javascript
 {
-    "server": "Two",
-    "time": 1490493497160,
-    "players": {
-        "17": {
-            "siren": false,
-            "med": false,
-            "caution": false,
-            "tow": false,
-            "cop": false,
-            "isChased": false,
-            "isJoining": false,
-            "hazard": false
-        },
+  "t": 1765741347519,
+  "n": "Two",
+  "tk": "AS5X",
+  "ps": {
+    "1": {
+      "u": 1,
+      "p": 117,
+      "un": "Milkereus",
+      "nn": "^7{SQUID}Revvy",
+      "r": 1,
+      "f": 1,
+      "a": 0,
+      "us": 0,
+      "x": -627.43,
+      "y": -224.89,
+      "h": 178.45,
+      "s": 8.18,
+      "l": "^2Safe Zone",
+      "sl": 0.0,
+      "bl": 0.0,
+      "bc": 0.0,
+      "sid": "429F4A",
+      "v": "KISOH"
+    },
         ...
     }
 }
